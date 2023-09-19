@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="counter">
+    <div class="label-container">
+      <label id="incrementLabel" for="incrementInput">Increment Gap</label>
+      <div class="input-container">
+        <input type="number" id="incrementInput" onchange="updateIncrementValue()" placeholder="1">
+        <div class="button-container">
+          <button id="resetIncrementButton">
+            <img src="./undo-arrow.png" alt="Reset Increment">
+          </button>
+        </div>
+      </div>
+      
+    </div>
+    <h1 id="countDisplay">0</h1>
+    <div class="button-container">
+      <button id="decrementButton" onclick="decrement()">-</button>
+      <button id="incrementButton" onclick="increment()">+</button>
+    </div>
+    <button id="resetButton" onclick="resetWithCountdown()">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
